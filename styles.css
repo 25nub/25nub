@@ -8,9 +8,8 @@ body, h1, h2, p, ul, li {
 body {
     background-image: url('your-background-image.jpg');
     background-size: cover;
-    font-family: 'SuperMario256', sans-serif;
-    src: url('fonts/SuperMario256.ttf');
-    color: #000; /* Text color */
+    font-family: 'Super Mario 256', sans-serif; /* Custom font */
+    color: #000; /* Text color set to black */
 }
 
 /* Header styling */
@@ -32,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;; /* Link color */
+    color: #000; /* Link color set to black */
     font-weight: bold;
 }
 
@@ -40,6 +39,7 @@ nav ul li a {
 section {
     padding: 50px;
     text-align: center;
+    color: #000; /* Text color set to black */
 }
 
 h1, h2 {
@@ -54,6 +54,12 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* Include the custom font */
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('fonts/SuperMario256.ttf') format('truetype');
 }
 
 /* Responsive styles */
