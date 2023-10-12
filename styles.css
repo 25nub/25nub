@@ -10,7 +10,7 @@ body {
     background-size: cover;
     src: url('fonts/SuperMario256.ttf');
     font-family: 'SuperMario256', sans-serif;
-    color: #fff; /* Text color */
+    color: #000; /* Text color */
 }
 
 /* Header styling */
