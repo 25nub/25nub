@@ -8,7 +8,8 @@ body, h1, h2, p, ul, li {
 body {
     background-image: url('your-background-image.jpg');
     background-size: cover;
-    font-family: 'Your Custom Font', sans-serif;
+    src: url('fonts/SuperMario256.ttf');
+    font-family: 'SuperMario256', sans-serif;
     color: #fff; /* Text color */
 }
 
