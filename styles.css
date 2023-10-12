@@ -4,10 +4,10 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-/* Apply a background color and text color */
+/* Apply a background image and set text color */
 body {
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
+    background-image: url('images/25nubBackgound.png'); /* Path to your background image */
+    background-repeat: repeat;
     font-family: 'Super Mario 256', sans-serif; /* Custom font */
     color: #000; /* Text color set to black */
 }
