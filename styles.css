@@ -78,6 +78,23 @@ div {
     font-weight: 100;
 }
 
+/* Responsive styles for SoundCloud grid on mobile */
+@media screen and (max-width: 768px) {
+    .soundcloud-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    div {
+        font-size: 8px;
+    }
+}
+
 /* Footer styling */
 footer {
     background: rgba(0, 0, 0, 0.5);
