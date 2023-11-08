@@ -4,20 +4,21 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-/* Apply a background image and set text color */
+/* Apply a background color and text color */
 body {
-    background-image: url('images/25nubBackgound.png'); /* Path to your background image */
-    background-repeat: repeat;
-    font-family: 'Super Mario 256', sans-serif; /* Custom font */
-    color: #000; /* Text color set to black */
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    font-family: 'Super Mario 256', sans-serif;
+    color: #000;
 }
 
 /* Header styling */
 header {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: fixed;
     width: 100%;
+    top: 0; /* Fixed position at the top */
 }
 
 nav ul {
@@ -31,7 +32,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000; /* Link color set to black */
+    color: #000;
     font-weight: bold;
 }
 
@@ -39,7 +40,7 @@ nav ul li a {
 section {
     padding: 50px;
     text-align: center;
-    color: #000; /* Text color set to black */
+    color: #000;
 }
 
 h1, h2 {
@@ -48,7 +49,7 @@ h1, h2 {
 
 /* Footer styling */
 footer {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 10px;
     position: absolute;
@@ -65,44 +66,23 @@ footer {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     header {
-        text-align: center;
-    }
-    
-    nav ul {
-        text-align: center;
-        padding-top: 10px;
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
-}
-/* Default styles for larger screens */
-header {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    header {
-        text-align: center; /* Center the header content */
+        position: static; /* Not fixed on smaller screens */
     }
 
     nav ul {
-        text-align: center; /* Center the navigation links */
-        padding-top: 10px;
+        display: none; /* Hide navigation menu on smaller screens */
     }
 
     nav ul li {
         display: block;
         margin: 0;
     }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Adjust other styles for mobile */
 }
