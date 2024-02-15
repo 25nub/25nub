@@ -1,109 +1,10 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>25nub - Portfolio</title>
-    <style>
-        body {
-    font-family: 'Super Mario 256';
-    src: url('fonts/SuperMario256.ttf') format('truetype');
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
-        }
-
-        nav {
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        section {
-            padding: 40px 20px;
-        }
-
-        #home {
-            background-color: #eee;
-            text-align: center;
-        }
-
-        #music {
-            background-color: #fff;
-        }
-
-        h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .soundcloud-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 0;
-            padding: 0;
-        }
-
-        .soundcloud-item {
-            flex: 1;
-            max-width: calc(33.333% - 20px); /* Adjust the max-width and margin as needed */
-            margin: 10px;
-            box-sizing: border-box;
-        }
-
-        .soundcloud-item iframe {
-            width: 100%;
-            border: 0; /* Remove iframe border */
-        }
-
-        .soundcloud-item div {
-            font-size: 10px;
-            color: #cccccc;
-            line-break: anywhere;
-            word-break: normal;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-            font-weight: 100;
-        }
-
-        #contact {
-            background-color: #eee;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -111,6 +12,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#music">Music</a></li>
+                <li><a href="#live-sets">Live Sets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -124,76 +26,37 @@
     <section id="music">
         <h2>Music</h2>
         <div class="soundcloud-grid">
-            <!-- SoundCloud Embed Code 1 (updated for desktop) -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1596713628&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/nubbin" title="Nubbin" target="_blank" style="color: #cccccc; text-decoration: none;">Nubbin</a>
-                </div>
-            </div>
+            <!-- SoundCloud Embed Code 1 -->
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1596713628&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
 
             <!-- SoundCloud Embed Code 2 -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1519891255&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/sunset-vibes" title="Sunset Vibes" target="_blank" style="color: #cccccc; text-decoration: none;">Sunset Vibes</a>
-                </div>
-            </div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1519891255&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
 
             <!-- SoundCloud Embed Code 3 -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1643885295&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/underground-groove" title="Underground Groove" target="_blank" style="color: #cccccc; text-decoration: none;">Underground Groove</a>
-                </div>
-            </div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1643885295&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
 
             <!-- SoundCloud Embed Code 4 -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1596741060&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/into-the-unknown" title="Into the Unknown" target="_blank" style="color: #cccccc; text-decoration: none;">Into the Unknown</a>
-                </div>
-            </div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1596741060&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
 
-            <!-- SoundCloud Embed Code 5 -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1694401812&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/i-love-xque" title="I LOVE XQUE" target="_blank" style="color: #cccccc; text-decoration: none;">I LOVE XQUE</a>
-                </div>
-            </div>
-
-            <!-- SoundCloud Embed Code 6 -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1694457771&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/we-love-uk-garage" title="WE LOVE UK GARAGE" target="_blank" style="color: #cccccc; text-decoration: none;">WE LOVE UK GARAGE</a>
-                </div>
-            </div>
-
-            <!-- SoundCloud Embed Code 7 -->
-            <div class="soundcloud-item">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1707155712&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
-                <div>
-                    <a href="https://soundcloud.com/25nub" title="25nub" target="_blank" style="color: #cccccc; text-decoration: none;">25nub</a> ·
-                    <a href="https://soundcloud.com/25nub/mastery-of-ambience" title="Mastery of Ambience" target="_blank" style="color: #cccccc; text-decoration: none;">Mastery of Ambience</a>
-                </div>
-            </div>
+            <!-- New SoundCloud Embed -->
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1745013201&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
         </div>
+    </section>
+
+    <section id="live-sets">
+        <h2>Live Sets</h2>
+        <!-- YouTube Embed Code -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ilZeq7UJfzI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </section>
 
     <section id="contact">
@@ -203,8 +66,7 @@
     </section>
 
     <footer>
-        <p>© 2023 25 Nub</p>
+        <p>&copy; 2023 25 Nub</p>
     </footer>
-
-
-</body></html>
+</body>
+</html>
